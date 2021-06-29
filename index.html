@@ -121,16 +121,9 @@
   </table> 
 </div>
   <br><br>
+
   <div>
     <form action="">
-      <div >
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
-      </div>
-      <div >
-        <label for="email">Email</label>
-        <input type="email" name="e-mail" id="email">
-      </div>
       <div >
         <label for="message">Message</label>
         <textarea name="message" id="message"></textarea> 
@@ -138,7 +131,9 @@
       <button type="submit" >Send</button>   
     </form>
   </div>
-  <br><br><br><br><br><br>
+
+  <br><br><br>
+
   <footer>
     <div>
       Adress: Smartphone Paradise, Sonnenallee 123, 10999 Berlin, Tel: +49 030-987346
@@ -151,6 +146,23 @@
       newColor[0].style.color = "red"
     } 
     changeH1()
+
+    let backgroundColor = function() {
+      let newBackground = document.querySelectorAll("body")
+      newBackground[0].style.background = "orange"
+    }
+    backgroundColor ()
+
+    let footerAdress = function () {
+    let newFooter = document.querySelectorAll("footer")
+    newFooter[0].innerText = "Smartphone Paradise, Hermannstr. 253, 10949 Berlin, Tel: +49 030-678536"
+    }
+    footerAdress ()
+
+    
+
+
+
 
   </script>
 </body>
