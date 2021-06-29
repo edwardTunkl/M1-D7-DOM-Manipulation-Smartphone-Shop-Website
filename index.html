@@ -5,10 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smartphone Shop Website</title>
+<style>
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+</style>
+
+
 </head>
 
-<body>
+<body >
   <h1>Smarthphone Paradise</h1>
+  <div >
   <table>
     <tr>
       <th>Top Products</th>
@@ -109,6 +119,7 @@
       </td>
     </tr>
   </table> 
+</div>
   <br><br>
   <div>
     <form action="">
@@ -129,10 +140,18 @@
   </div>
   <br><br><br><br><br><br>
   <footer>
-<div>
-  Adress: Smartphone Paradise, Sonnenallee 123, 10999 Berlin, Tel: +49 030-987346
-</div>
-
+    <div>
+      Adress: Smartphone Paradise, Sonnenallee 123, 10999 Berlin, Tel: +49 030-987346
+    </div>
   </footer>
+  <script lang="text/javascript">
+ 
+    let changeH1 = function () {
+      let newColor = document.querySelectorAll("h1")
+      newColor[0].style.color = "red"
+    } 
+    changeH1()
+
+  </script>
 </body>
 </html>
